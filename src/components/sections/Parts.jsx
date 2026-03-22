@@ -33,6 +33,13 @@ export default function Parts() {
             </div>
           ))}
         </div>
+        
+        <div className="mt-16 text-center">
+          <a href="/store" className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-xl font-bold uppercase tracking-wider hover:shadow-[0_0_30px_rgba(249,115,22,0.3)] hover:-translate-y-1 transition-all">
+            <span className="material-symbols-outlined text-xl">storefront</span>
+            Shop All Spare Parts
+          </a>
+        </div>
       </div>
     </section>
   );
