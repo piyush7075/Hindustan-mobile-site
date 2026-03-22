@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const parts = [
   { icon: 'smartphone', title: 'Display', desc: 'High-quality screen replacements that work just like your original phone display.' },
@@ -11,7 +12,7 @@ const parts = [
 
 export default function Parts() {
   return (
-    <section id="parts" className="py-24 px-6 bg-[#131313]">
+    <section id="store" className="py-24 px-6 bg-[#131313]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-orange-500 font-bold uppercase tracking-widest text-sm mb-3">Genuine Spares</p>
@@ -35,10 +36,10 @@ export default function Parts() {
         </div>
         
         <div className="mt-16 text-center">
-          <a href="/store" className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-xl font-bold uppercase tracking-wider hover:shadow-[0_0_30px_rgba(249,115,22,0.3)] hover:-translate-y-1 transition-all">
+          <Link to="/store" className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-xl font-bold uppercase tracking-wider hover:shadow-[0_0_30px_rgba(249,115,22,0.3)] hover:-translate-y-1 transition-all">
             <span className="material-symbols-outlined text-xl">storefront</span>
             Shop All Spare Parts
-          </a>
+          </Link>
         </div>
       </div>
     </section>
